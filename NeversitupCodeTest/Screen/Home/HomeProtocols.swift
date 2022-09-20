@@ -2,7 +2,7 @@
 //  HomeProtocols.swift
 //  NeversitupCodeTest
 //
-//  Created by Kyaw Ye Htun on 9/19/22.
+//  Created by Kyaw1 Ye Htun on 9/19/22.
 //
 
 import Foundation
@@ -18,15 +18,13 @@ protocol HomePresenterProtocol: AnyObject {
     var interactor: HomeInteractorInputProtocol? { get set }
     var router: HomeRouterProtocol? { get set }
     func getCurrentPriceList()
-}
-
-protocol HomeRouterProtocol: AnyObject {
-    static func createModule() -> UIViewController?
+ 
 }
 
 protocol HomeInteractorInputProtocol {
     var presenter: HomeInteractorOutputProtocol? { get set }
     var webService: HomeWebServiceInputProtocol? { get set }
+    var localStorage: HomeLocalStorageProtocol? { get set }
     func callCurrentPriceListApi()
     
 }
@@ -43,4 +41,12 @@ protocol HomeWebServiceInputProtocol {
 }
 protocol HomeWebServiceOutputProtocol {
     func responseFromCurrencyList(_ isSuccess : Bool? , data : currencyListModel)
+}
+
+protocol HomeLocalStorageProtocol{
+    func saveCurrencyData(_ data : currencyListModel)
+}
+
+protocol HomeRouterProtocol: AnyObject {
+    static func createModule() -> UIViewController?
 }

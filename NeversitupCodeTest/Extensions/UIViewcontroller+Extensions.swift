@@ -15,4 +15,8 @@ extension UIViewController {
     @nonobjc class var HomeViewController: UIViewController? {
         return UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
     }
+    
+    @nonobjc class var HistoryViewController: UIViewController? {
+        return UIStoryboard(name: "HistoryView", bundle: nil).instantiateViewController(withIdentifier: "HistoryViewController")
+    }
 }

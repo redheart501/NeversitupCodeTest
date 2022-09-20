@@ -10,7 +10,6 @@ import UIKit
 
 class HomeListTableCell : UITableViewCell {
     
-    @IBOutlet weak var imgViewCurrency : UIImageView!
     @IBOutlet weak var lblCurrencyName: UILabel!
     @IBOutlet weak var lblCurrencyDesc: UILabel!
     @IBOutlet weak var lblCurrencyRate: UILabel!

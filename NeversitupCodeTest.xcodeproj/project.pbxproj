@@ -37,6 +37,19 @@
 		67874DCD28D8B32F00726F22 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 67874DCC28D8B32F00726F22 /* Alamofire */; };
 		67874DD028D8B35700726F22 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 67874DCF28D8B35700726F22 /* ObjectMapper */; };
 		67874DD228D8B88700726F22 /* CurrencyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67874DD128D8B88700726F22 /* CurrencyListModel.swift */; };
+		67F80C7528D9716500C944AF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C7428D9716500C944AF /* Utility.swift */; };
+		67F80C7728D9829500C944AF /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C7628D9829500C944AF /* LocalStorageManager.swift */; };
+		67F80C7A28D9858700C944AF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 67F80C7928D9858700C944AF /* Realm */; };
+		67F80C7C28D9858700C944AF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67F80C7B28D9858700C944AF /* RealmSwift */; };
+		67F80C7E28D989CE00C944AF /* HistoryTablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C7D28D989CD00C944AF /* HistoryTablecell.swift */; };
+		67F80C8028D989DD00C944AF /* HistoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F80C7F28D989DD00C944AF /* HistoryTableCell.xib */; };
+		67F80C8228D98D5900C944AF /* HistoryViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8128D98D5900C944AF /* HistoryViewProtocols.swift */; };
+		67F80C8428D98E5700C944AF /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8328D98E5700C944AF /* HistoryRouter.swift */; };
+		67F80C8628D98E7300C944AF /* HistoryViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8528D98E7300C944AF /* HistoryViewInteractor.swift */; };
+		67F80C8828D98E7D00C944AF /* HistoryViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8728D98E7D00C944AF /* HistoryViewPresenter.swift */; };
+		67F80C8A28D98E8C00C944AF /* HistoryViewLocalstorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8928D98E8C00C944AF /* HistoryViewLocalstorage.swift */; };
+		67F80C8F28DA0A6B00C944AF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8E28DA0A6A00C944AF /* UIView+Extensions.swift */; };
+		67F80C9128DA0B3600C944AF /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C9028DA0B3500C944AF /* DateFormatterHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +102,17 @@
 		67874DC728D8A5D700726F22 /* HomeListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableCell.swift; sourceTree = "<group>"; };
 		67874DC928D8A5E800726F22 /* homeListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeListTableCell.xib; sourceTree = "<group>"; };
 		67874DD128D8B88700726F22 /* CurrencyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListModel.swift; sourceTree = "<group>"; };
+		67F80C7428D9716500C944AF /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		67F80C7628D9829500C944AF /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		67F80C7D28D989CD00C944AF /* HistoryTablecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTablecell.swift; sourceTree = "<group>"; };
+		67F80C7F28D989DD00C944AF /* HistoryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableCell.xib; sourceTree = "<group>"; };
+		67F80C8128D98D5900C944AF /* HistoryViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewProtocols.swift; sourceTree = "<group>"; };
+		67F80C8328D98E5700C944AF /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		67F80C8528D98E7300C944AF /* HistoryViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewInteractor.swift; sourceTree = "<group>"; };
+		67F80C8728D98E7D00C944AF /* HistoryViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewPresenter.swift; sourceTree = "<group>"; };
+		67F80C8928D98E8C00C944AF /* HistoryViewLocalstorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewLocalstorage.swift; sourceTree = "<group>"; };
+		67F80C8E28DA0A6A00C944AF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		67F80C9028DA0B3500C944AF /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F80C7C28D9858700C944AF /* RealmSwift in Frameworks */,
+				67F80C7A28D9858700C944AF /* Realm in Frameworks */,
 				67874DD028D8B35700726F22 /* ObjectMapper in Frameworks */,
 				67874DCD28D8B32F00726F22 /* Alamofire in Frameworks */,
 			);
@@ -143,10 +169,11 @@
 			children = (
 				67874D6F28D87B8700726F22 /* AppDelegate.swift */,
 				67874D7128D87B8700726F22 /* SceneDelegate.swift */,
-				67874DA528D887A000726F22 /* UIViewcontroller+Extensions.swift */,
-				67874DD128D8B88700726F22 /* CurrencyListModel.swift */,
-				67874DC728D8A5D700726F22 /* HomeListTableCell.swift */,
-				67874DC928D8A5E800726F22 /* homeListTableCell.xib */,
+				67F80C7428D9716500C944AF /* Utility.swift */,
+				67F80C9328DA262000C944AF /* DataLayer */,
+				67F80C9228DA25FA00C944AF /* Extensions */,
+				67F80C8C28D9B32700C944AF /* Entity */,
+				67F80C8D28D9B34300C944AF /* CustomUI */,
 				67874DC628D8A3C900726F22 /* Screen */,
 				67874D7828D87B8F00726F22 /* Assets.xcassets */,
 				67874D7A28D87B8F00726F22 /* LaunchScreen.storyboard */,
@@ -213,6 +240,11 @@
 			children = (
 				67874DAA28D888EE00726F22 /* HistoryView.storyboard */,
 				67874DC328D88F4E00726F22 /* HistoryViewController.swift */,
+				67F80C8128D98D5900C944AF /* HistoryViewProtocols.swift */,
+				67F80C8328D98E5700C944AF /* HistoryRouter.swift */,
+				67F80C8528D98E7300C944AF /* HistoryViewInteractor.swift */,
+				67F80C8728D98E7D00C944AF /* HistoryViewPresenter.swift */,
+				67F80C8928D98E8C00C944AF /* HistoryViewLocalstorage.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -226,6 +258,59 @@
 				67874DC528D88F5500726F22 /* History */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		67F80C7328D9714100C944AF /* HomeListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				67874DC728D8A5D700726F22 /* HomeListTableCell.swift */,
+				67874DC928D8A5E800726F22 /* homeListTableCell.xib */,
+			);
+			path = HomeListTableCell;
+			sourceTree = "<group>";
+		};
+		67F80C8B28D9B2FE00C944AF /* HistoryTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				67F80C7D28D989CD00C944AF /* HistoryTablecell.swift */,
+				67F80C7F28D989DD00C944AF /* HistoryTableCell.xib */,
+			);
+			path = HistoryTableCell;
+			sourceTree = "<group>";
+		};
+		67F80C8C28D9B32700C944AF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				67874DD128D8B88700726F22 /* CurrencyListModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		67F80C8D28D9B34300C944AF /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				67F80C8B28D9B2FE00C944AF /* HistoryTableCell */,
+				67F80C7328D9714100C944AF /* HomeListTableCell */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		67F80C9228DA25FA00C944AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67874DA528D887A000726F22 /* UIViewcontroller+Extensions.swift */,
+				67F80C8E28DA0A6A00C944AF /* UIView+Extensions.swift */,
+				67F80C9028DA0B3500C944AF /* DateFormatterHelper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67F80C9328DA262000C944AF /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				67F80C7628D9829500C944AF /* LocalStorageManager.swift */,
+			);
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +332,8 @@
 			packageProductDependencies = (
 				67874DCC28D8B32F00726F22 /* Alamofire */,
 				67874DCF28D8B35700726F22 /* ObjectMapper */,
+				67F80C7928D9858700C944AF /* Realm */,
+				67F80C7B28D9858700C944AF /* RealmSwift */,
 			);
 			productName = NeversitupCodeTest;
 			productReference = 67874D6C28D87B8700726F22 /* NeversitupCodeTest.app */;
@@ -323,6 +410,7 @@
 			packageReferences = (
 				67874DCB28D8B32F00726F22 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				67874DCE28D8B35700726F22 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				67F80C7828D9858700C944AF /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 67874D6D28D87B8700726F22 /* Products */;
 			projectDirPath = "";
@@ -347,6 +435,7 @@
 				67874D7928D87B8F00726F22 /* Assets.xcassets in Resources */,
 				67874DAC28D888EE00726F22 /* HistoryView.storyboard in Resources */,
 				67874D7728D87B8700726F22 /* Home.storyboard in Resources */,
+				67F80C8028D989DD00C944AF /* HistoryTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,22 +461,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				67874DAF28D8891000726F22 /* TabbarRouter.swift in Sources */,
+				67F80C7728D9829500C944AF /* LocalStorageManager.swift in Sources */,
 				67874DA628D887A000726F22 /* UIViewcontroller+Extensions.swift in Sources */,
 				67874DC128D88F1F00726F22 /* ConvertViewController.swift in Sources */,
 				67874D7428D87B8700726F22 /* HomeViewController.swift in Sources */,
+				67F80C8228D98D5900C944AF /* HistoryViewProtocols.swift in Sources */,
 				67874DBD28D88ECA00726F22 /* HomeWebservice.swift in Sources */,
 				67874DC828D8A5D700726F22 /* HomeListTableCell.swift in Sources */,
+				67F80C7528D9716500C944AF /* Utility.swift in Sources */,
 				67874DD228D8B88700726F22 /* CurrencyListModel.swift in Sources */,
 				67874DBF28D88EFF00726F22 /* HomeLocalStorage.swift in Sources */,
 				67874DBB28D88EB100726F22 /* HomeInteractor.swift in Sources */,
+				67F80C8F28DA0A6B00C944AF /* UIView+Extensions.swift in Sources */,
 				67874DC428D88F4E00726F22 /* HistoryViewController.swift in Sources */,
+				67F80C8A28D98E8C00C944AF /* HistoryViewLocalstorage.swift in Sources */,
 				67874DB728D88E8A00726F22 /* HomePresenter.swift in Sources */,
 				67874DB128D8896500726F22 /* TabbarProtocols.swift in Sources */,
+				67F80C7E28D989CE00C944AF /* HistoryTablecell.swift in Sources */,
 				67874DB528D88E8300726F22 /* HomeProtocols.swift in Sources */,
+				67F80C8828D98E7D00C944AF /* HistoryViewPresenter.swift in Sources */,
 				67874DB328D88A4300726F22 /* TabbarPresenter.swift in Sources */,
 				67874D7028D87B8700726F22 /* AppDelegate.swift in Sources */,
+				67F80C9128DA0B3600C944AF /* DateFormatterHelper.swift in Sources */,
 				67874DA828D8885800726F22 /* TabbarViewController.swift in Sources */,
+				67F80C8428D98E5700C944AF /* HistoryRouter.swift in Sources */,
 				67874D7228D87B8700726F22 /* SceneDelegate.swift in Sources */,
+				67F80C8628D98E7300C944AF /* HistoryViewInteractor.swift in Sources */,
 				67874DB928D88E9200726F22 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,6 +873,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		67F80C7828D9858700C944AF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -786,6 +893,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 67874DCE28D8B35700726F22 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
+		};
+		67F80C7928D9858700C944AF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F80C7828D9858700C944AF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		67F80C7B28D9858700C944AF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F80C7828D9858700C944AF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

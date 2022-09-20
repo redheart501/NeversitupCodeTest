@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewInteractor: HomeInteractorInputProtocol {
     var presenter: HomeInteractorOutputProtocol?
-    
+    var localStorage : HomeLocalStorageProtocol?
     var webService: HomeWebServiceInputProtocol?
     
     func callCurrentPriceListApi() {
@@ -24,6 +24,7 @@ extension HomeViewInteractor : HomeWebServiceOutputProtocol{
     func responseFromCurrencyList(_ isSuccess: Bool?,data : currencyListModel) {
         if isSuccess! {
             presenter?.success(data)
+            localStorage?.saveCurrencyData(data)
         }else{
             presenter?.fail()
         }

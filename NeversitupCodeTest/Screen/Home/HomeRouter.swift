@@ -16,7 +16,7 @@ class HomeRouter : HomeRouterProtocol {
         var presenter: HomePresenterProtocol & HomeInteractorOutputProtocol = HomePresenter()
         var interactor: HomeInteractorInputProtocol & HomeWebServiceOutputProtocol = HomeViewInteractor()
         var webService: HomeWebServiceInputProtocol = HomeWebService()
-//        let localStorage: HomeLocalStorageProtocol = HomeLocalStorage()
+        let localStorage: HomeLocalStorageProtocol = HomeLocalStorage()
         
         view.presenter = presenter
         presenter.view = view
@@ -24,7 +24,7 @@ class HomeRouter : HomeRouterProtocol {
         presenter.interactor = interactor
         interactor.presenter = presenter
         interactor.webService = webService
-//        interactor.localStorage = localStorage
+        interactor.localStorage = localStorage
         webService.interactor = interactor
         return view
     }

@@ -32,5 +32,10 @@ class NeversitupCodeTestTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testDateFormat() throws{
+        let testISODate = "2022-09-20T16:26:00+00:00"
+        XCTAssertEqual(DateFomatterHelper().getDate(timeString: testISODate), "Sep 20, 10:56 PM")
+    }
 
 }

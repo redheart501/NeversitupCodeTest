@@ -14,6 +14,9 @@ class TabbarViewController : UITabBarController{
         if let homeView = HomeRouter.createModule() {
             viewControllers?[0] = homeView
         }
+        if let historyView = HistoryRouter.createModule() {
+            viewControllers?[2] = historyView
+        }
     }
     
 }

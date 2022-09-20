@@ -7,35 +7,58 @@
 
 import UIKit
 import ObjectMapper
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     private let cellId = "HomeListTableCell"
     var presenter : HomePresenterProtocol?
-    var currencyData = [NSDictionary]()
+    var currencyData = [currencyModel]()
+    
     var currencyList : currencyListModel?{
         didSet {
+            self.currencyData.removeAll()
             for i in (currencyList?.bpi?.values)!{
-               let data = i as! NSDictionary
-                currencyData.append(data)
+                let data = i as! [String : Any]
+                currencyData.append(currencyModel(JSON: data)!)
             }
-            print(currencyData )
             self.tableView.reloadData()
+            print(LocalStorageManager.shared.getData())
         }
     }
-
+    
+   weak var timer : Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
         initalView()
+        getData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(reloadCurrencyData), userInfo: nil, repeats: true)
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        timer?.invalidate()
+    }
+    
+    @objc func reloadCurrencyData(){
+        getData()
     }
     
     func initalView(){
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         tableView.register(HomeListTableCell.createNib(), forCellReuseIdentifier: cellId )
+    }
+    
+    func getData(){
         presenter?.getCurrentPriceList()
     }
+    
 
 }
 
@@ -49,35 +72,13 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate {
            
             return UITableViewCell()
         }
+     
         let obj = currencyData[indexPath.row]
+        let currencyType = Utility().getCurrenyType(obj.code ?? "USD")
+        cell.lblCurrencyName.text = Utility().flag(currencyType) + (obj.code ?? "")
+        cell.lblCurrencyDesc.text = obj.description
+        cell.lblCurrencyRate.text = Utility().getCurrencySign(currencyType) + " " + (obj.rate ?? "-")
         
-        let code = obj.object(forKey: "code") as? String
-        let desc = obj.object(forKey: "description") as? String
-        let rate = obj.object(forKey: "rate") as? String
-        
-        //Another Ways of Get Data
-//        switch indexPath.row{
-//        case 0:
-//            code = self.currencyList?.USD?.code ?? ""
-//            desc = self.currencyList?.USD?.description ?? ""
-//            rate = self.currencyList?.USD?.rate ?? ""
-//            break
-//        case 1:
-//            code = self.currencyList?.EUR?.code ?? ""
-//            desc = self.currencyList?.EUR?.description ?? ""
-//            rate = self.currencyList?.EUR?.rate ?? ""
-//            break
-//        case 2:
-//            code = self.currencyList?.GBP?.code ?? ""
-//            desc = self.currencyList?.GBP?.description ?? ""
-//            rate = self.currencyList?.GBP?.rate ?? ""
-//            break
-//        default:
-//            break
-//        }
-        cell.lblCurrencyName.text = code
-        cell.lblCurrencyDesc.text = desc
-        cell.lblCurrencyRate.text = rate
         return cell
     }
 }

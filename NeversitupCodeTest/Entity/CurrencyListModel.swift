@@ -14,7 +14,7 @@ class currencyListModel: Mappable {
     var USD : currencyModel?
     var GBP : currencyModel?
     var EUR : currencyModel?
-
+    var updatedISO: String?
     required init?(map: Map) {
         
     }
@@ -24,9 +24,8 @@ class currencyListModel: Mappable {
         USD <- map["bpi.USD"]
         GBP <- map["bpi.GBP"]
         EUR <- map["bpi.EUR"]
+        updatedISO <- map["time.updatedISO"]
     }
-    
-
 }
 class currencyModel : Mappable{
     var code: String?
@@ -47,14 +46,3 @@ class currencyModel : Mappable{
     }
 }
 
-struct CurrentPriceModel: Codable {
-    let bpi: [ String : CurrencyModel]
-}
-struct CurrencyModel: Codable {
-    let code: String
-    let symbol: String
-    let rate: String
-    let description: String
-    let rate_float: Float?
-    
-}

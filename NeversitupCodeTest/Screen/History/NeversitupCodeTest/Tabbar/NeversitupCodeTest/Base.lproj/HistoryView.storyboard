@@ -11,20 +11,49 @@
         <!--History-->
         <scene sceneID="li9-bV-OWp">
             <objects>
-                <viewController id="oSB-Ki-Hla" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" id="oSB-Ki-Hla" customClass="HistoryViewController" customModule="NeversitupCodeTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hCR-bf-FOL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8rI-uE-bEK">
+                                <rect key="frame" x="0.0" y="109" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQz-Qg-ZO6">
+                                <rect key="frame" x="307" y="59" width="107" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="QMg-OP-WLa"/>
+                                    <constraint firstAttribute="width" constant="107" id="hD0-GK-gyF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                <connections>
+                                    <action selector="clickBtnClear:" destination="oSB-Ki-Hla" eventType="touchUpInside" id="t2m-gD-C0C"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qnw-3X-GJt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qnw-3X-GJt" firstAttribute="trailing" secondItem="hQz-Qg-ZO6" secondAttribute="trailing" id="3rD-1X-MHP"/>
+                            <constraint firstItem="qnw-3X-GJt" firstAttribute="trailing" secondItem="8rI-uE-bEK" secondAttribute="trailing" id="AmG-VE-1By"/>
+                            <constraint firstItem="hQz-Qg-ZO6" firstAttribute="top" secondItem="qnw-3X-GJt" secondAttribute="top" constant="15" id="Cxc-fw-R5j"/>
+                            <constraint firstItem="8rI-uE-bEK" firstAttribute="top" secondItem="qnw-3X-GJt" secondAttribute="top" constant="65" id="dUX-Yj-Fun"/>
+                            <constraint firstItem="8rI-uE-bEK" firstAttribute="bottom" secondItem="qnw-3X-GJt" secondAttribute="bottom" constant="16" id="hkR-zP-htO"/>
+                            <constraint firstItem="8rI-uE-bEK" firstAttribute="leading" secondItem="qnw-3X-GJt" secondAttribute="leading" id="l48-Cj-1tc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="goforward" catalog="system" selectedImage="goforward" id="Vqu-bf-e4s">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="8rI-uE-bEK" id="GOM-El-olB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7f-kt-jTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1171" y="442"/>
+            <point key="canvasLocation" x="1169.5652173913045" y="441.96428571428572"/>
         </scene>
     </scenes>
     <resources>
