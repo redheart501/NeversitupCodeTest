@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeListTableCell" rowHeight="109" id="CFM-t1-bDb" customClass="HomeListTableCell" customModule="NeversitupCodeTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CFM-t1-bDb" id="4u3-EO-TVM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKw-aH-27b">
+                        <rect key="frame" x="20" y="20" width="374" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-Y9-vyz">
+                                <rect key="frame" x="8" y="8" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fTc-Y9-vyz" secondAttribute="height" multiplier="1:1" id="xNv-eW-WRJ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-vj-qIQ">
+                                <rect key="frame" x="82" y="8" width="115" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrencyName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-tQ-kv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrencyType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-O0-Iki">
+                                        <rect key="frame" x="0.0" y="31.5" width="115" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$currentPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWb-hF-77U">
+                                <rect key="frame" x="254.5" y="24" width="104" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LWb-hF-77U" firstAttribute="centerY" secondItem="GKw-aH-27b" secondAttribute="centerY" id="3PY-ZP-gbC"/>
+                            <constraint firstItem="J9a-vj-qIQ" firstAttribute="leading" secondItem="fTc-Y9-vyz" secondAttribute="trailing" constant="22" id="9F0-cI-g1y"/>
+                            <constraint firstItem="fTc-Y9-vyz" firstAttribute="leading" secondItem="GKw-aH-27b" secondAttribute="leading" constant="8" id="EP6-Ac-6w2"/>
+                            <constraint firstAttribute="bottom" secondItem="J9a-vj-qIQ" secondAttribute="bottom" constant="8" id="JAZ-J7-BCa"/>
+                            <constraint firstAttribute="trailing" secondItem="LWb-hF-77U" secondAttribute="trailing" constant="15.5" id="W6p-rY-HNI"/>
+                            <constraint firstItem="J9a-vj-qIQ" firstAttribute="top" secondItem="GKw-aH-27b" secondAttribute="top" constant="8" id="j8w-Bo-iQ2"/>
+                            <constraint firstAttribute="bottom" secondItem="fTc-Y9-vyz" secondAttribute="bottom" constant="8" id="mAk-nT-jVl"/>
+                            <constraint firstItem="fTc-Y9-vyz" firstAttribute="top" secondItem="GKw-aH-27b" secondAttribute="top" constant="8" id="rz4-HN-xxg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GKw-aH-27b" firstAttribute="top" secondItem="4u3-EO-TVM" secondAttribute="top" constant="20" symbolic="YES" id="AKe-G9-uwt"/>
+                    <constraint firstItem="GKw-aH-27b" firstAttribute="leading" secondItem="4u3-EO-TVM" secondAttribute="leading" constant="20" symbolic="YES" id="YMe-D8-A25"/>
+                    <constraint firstAttribute="bottom" secondItem="GKw-aH-27b" secondAttribute="bottom" constant="21" id="l0f-ek-xiP"/>
+                    <constraint firstAttribute="trailing" secondItem="GKw-aH-27b" secondAttribute="trailing" constant="20" symbolic="YES" id="sxp-e5-u00"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgViewCurrency" destination="fTc-Y9-vyz" id="EK5-z8-nWN"/>
+                <outlet property="lblCurrencyDesc" destination="saQ-O0-Iki" id="aUZ-kT-hmX"/>
+                <outlet property="lblCurrencyName" destination="eIl-tQ-kv3" id="zIZ-m8-3ql"/>
+                <outlet property="lblCurrencyRate" destination="LWb-hF-77U" id="pub-OJ-f6z"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="69.977678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
