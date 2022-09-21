@@ -19,4 +19,7 @@ extension UIViewController {
     @nonobjc class var HistoryViewController: UIViewController? {
         return UIStoryboard(name: "HistoryView", bundle: nil).instantiateViewController(withIdentifier: "HistoryViewController")
     }
+    @nonobjc class var ConvertViewController: UIViewController? {
+        return UIStoryboard(name: "ConvertView", bundle: nil).instantiateViewController(withIdentifier: "ConvertViewController")
+    }
 }

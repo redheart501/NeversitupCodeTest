@@ -18,18 +18,18 @@ class ConvertViewController : UIViewController{
     
     //Implememnt for pop up button
     private lazy var USD = UIAction(title: "🇺🇸 USD",attributes: [], state: .off) { action in
-        var currencyType : CurrencyType = .USD
+        self.currencyType = .USD
         self.btnMenu.setTitle("🇺🇸 USD", for: .normal)
        
     }
     
     private lazy var EUR = UIAction(title: "🇪🇺 EUR", attributes: [], state: .off) { action in
-        var currencyType : CurrencyType = .EUR
+        self.currencyType = .EUR
         self.btnMenu.setTitle("🇪🇺 EUR", for: .normal)
     }
     
     private lazy var GBP = UIAction(title: "🇬🇧 GBP", image: nil, attributes: [], state: .off) { action in
-        var currencyType : CurrencyType = .GBP
+        self.currencyType = .GBP
         self.btnMenu.setTitle("🇬🇧 GBP", for: .normal)
     }
     
@@ -58,10 +58,17 @@ class ConvertViewController : UIViewController{
             price = LocalStorageManager.shared.getData().last?.EUR_Price ?? 0.0
             break
         }
-        
-        let inputValue = Float(self.inputTextfield.text ?? "0.0")! / price
+        let inputValue = (Float(self.inputTextfield.text ?? "0.0") ?? 0.0) / price
         self.lblOutputBtcValue.text = "\(inputValue)"
         
     }
+    
+}
+class ConvertViewRouter {
+    static func createModule() -> UIViewController? {
+        guard let view = UIViewController.ConvertViewController as? ConvertViewController else { return nil }
+        return view
+    }
+    
     
 }

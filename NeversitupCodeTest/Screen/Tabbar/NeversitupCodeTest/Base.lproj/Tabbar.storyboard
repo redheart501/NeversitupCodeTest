@@ -12,16 +12,15 @@
             <objects>
                 <tabBarController storyboardIdentifier="TabbarViewController" automaticallyAdjustsScrollViewInsets="NO" id="NDf-MO-2Zm" customClass="TabbarViewController" customModule="NeversitupCodeTest" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Bk2-WP-QEb">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bk2-WP-QEb">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemCyanColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Pi7-mX-CrY" kind="relationship" relationship="viewControllers" id="SZN-1s-3Fi"/>
                         <segue destination="YRN-Wg-f5Z" kind="relationship" relationship="viewControllers" id="OLm-sL-urD"/>
                         <segue destination="XIR-U1-tse" kind="relationship" relationship="viewControllers" id="Rsh-eV-Hxa"/>
+                        <segue destination="Pi7-mX-CrY" kind="relationship" relationship="viewControllers" id="IxG-Mf-tn2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNQ-rq-Evz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -31,7 +30,9 @@
         <!--HomeViewController-->
         <scene sceneID="683-7H-WB6">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="Pi7-mX-CrY" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="Pi7-mX-CrY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="veY-oz-mmg"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaA-Rx-4Bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="52"/>

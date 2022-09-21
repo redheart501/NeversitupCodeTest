@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(reloadCurrencyData), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(reloadCurrencyData), userInfo: nil, repeats: true)
         
     }
     

@@ -50,6 +50,7 @@
 		67F80C8A28D98E8C00C944AF /* HistoryViewLocalstorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8928D98E8C00C944AF /* HistoryViewLocalstorage.swift */; };
 		67F80C8F28DA0A6B00C944AF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C8E28DA0A6A00C944AF /* UIView+Extensions.swift */; };
 		67F80C9128DA0B3600C944AF /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C9028DA0B3500C944AF /* DateFormatterHelper.swift */; };
+		67F80C9528DAD5EF00C944AF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C9428DAD5EE00C944AF /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		67F80C8928D98E8C00C944AF /* HistoryViewLocalstorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewLocalstorage.swift; sourceTree = "<group>"; };
 		67F80C8E28DA0A6A00C944AF /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		67F80C9028DA0B3500C944AF /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
+		67F80C9428DAD5EE00C944AF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				67874D6F28D87B8700726F22 /* AppDelegate.swift */,
 				67874D7128D87B8700726F22 /* SceneDelegate.swift */,
 				67F80C7428D9716500C944AF /* Utility.swift */,
+				67F80C9428DAD5EE00C944AF /* Constant.swift */,
 				67F80C9328DA262000C944AF /* DataLayer */,
 				67F80C9228DA25FA00C944AF /* Extensions */,
 				67F80C8C28D9B32700C944AF /* Entity */,
@@ -470,6 +473,7 @@
 				67874DC828D8A5D700726F22 /* HomeListTableCell.swift in Sources */,
 				67F80C7528D9716500C944AF /* Utility.swift in Sources */,
 				67874DD228D8B88700726F22 /* CurrencyListModel.swift in Sources */,
+				67F80C9528DAD5EF00C944AF /* Constant.swift in Sources */,
 				67874DBF28D88EFF00726F22 /* HomeLocalStorage.swift in Sources */,
 				67874DBB28D88EB100726F22 /* HomeInteractor.swift in Sources */,
 				67F80C8F28DA0A6B00C944AF /* UIView+Extensions.swift in Sources */,
