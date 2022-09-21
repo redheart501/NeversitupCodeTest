@@ -59,4 +59,26 @@ class Utility {
         }
         return String(s)
     }
+    
+    func generateFibonaci(_ n: Int) -> [Int] {
+        var A = 1
+        var B = 0
+        var fibo = [Int]()
+        
+        for _ in 0..<n {
+            print("Fibonaci \(B)")
+            fibo.append(B)
+            let temp = A + B
+            A = B
+            B = temp
+            
+        }
+        return fibo
+    }
+    
+    func generatePrimeNumber(_ n : Int) -> [Int]{
+     
+        return Array<Int>(stride(from: 3, to: n, by: 2))
+    }
+    
 }

@@ -18,24 +18,17 @@ class NeversitupCodeTestTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
     func testDateFormat() throws{
         let testISODate = "2022-09-20T16:26:00+00:00"
         XCTAssertEqual(DateFomatterHelper().getDate(timeString: testISODate), "Sep 20, 10:56 PM")
     }
-
+    
+    func testGenerateFibo() throws{
+        XCTAssertEqual([0, 1, 1, 2, 3, 5, 8, 13], Utility().generateFibonaci(8))
+    }
+    
+    func testGenereatePrime() throws{
+        XCTAssertEqual([3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29], Utility().generatePrimeNumber(30))
+    }
 }
