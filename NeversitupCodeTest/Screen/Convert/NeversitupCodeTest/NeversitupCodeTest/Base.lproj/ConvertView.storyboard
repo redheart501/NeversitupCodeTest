@@ -93,6 +93,19 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.CornerRadius" value="8"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8F-2e-lMN">
+                                        <rect key="frame" x="349" y="0.0" width="45" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="S0M-gk-ffw"/>
+                                            <constraint firstAttribute="width" constant="45" id="b6R-U1-4Tc"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="multiply.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="clickClose:" destination="eIN-uZ-glV" eventType="touchUpInside" id="nah-un-N9d"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -100,11 +113,13 @@
                                     <constraint firstItem="wjR-ep-927" firstAttribute="leading" secondItem="oOG-0B-hoV" secondAttribute="trailing" constant="8" id="CMp-t0-e7J"/>
                                     <constraint firstItem="Pic-0O-TmJ" firstAttribute="leading" secondItem="Tnb-iS-rfo" secondAttribute="leading" constant="20" symbolic="YES" id="Cha-Bo-6YK"/>
                                     <constraint firstItem="Pic-0O-TmJ" firstAttribute="top" secondItem="Tnb-iS-rfo" secondAttribute="top" constant="20" symbolic="YES" id="D8H-fm-Ef3"/>
+                                    <constraint firstItem="Z8F-2e-lMN" firstAttribute="top" secondItem="Tnb-iS-rfo" secondAttribute="top" id="MyC-kT-3Q4"/>
                                     <constraint firstItem="ahl-8b-cxG" firstAttribute="leading" secondItem="AWk-ld-jPP" secondAttribute="trailing" constant="-4" id="NlD-7K-cHL"/>
                                     <constraint firstItem="wjR-ep-927" firstAttribute="centerY" secondItem="oOG-0B-hoV" secondAttribute="centerY" id="QWj-TL-8gF"/>
                                     <constraint firstItem="AWk-ld-jPP" firstAttribute="top" secondItem="jCd-A0-7BA" secondAttribute="bottom" constant="8" symbolic="YES" id="Rjk-Bg-XH2"/>
                                     <constraint firstAttribute="trailing" secondItem="wjR-ep-927" secondAttribute="trailing" constant="20" symbolic="YES" id="Rt5-51-YZx"/>
                                     <constraint firstItem="jCd-A0-7BA" firstAttribute="leading" secondItem="Tnb-iS-rfo" secondAttribute="leading" constant="20" symbolic="YES" id="S2s-Yj-vz7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z8F-2e-lMN" secondAttribute="trailing" constant="20" symbolic="YES" id="Vzt-gQ-TBk"/>
                                     <constraint firstAttribute="bottom" secondItem="AWk-ld-jPP" secondAttribute="bottom" constant="29" id="ZNA-QV-e4t"/>
                                     <constraint firstItem="jCd-A0-7BA" firstAttribute="top" secondItem="oOG-0B-hoV" secondAttribute="bottom" constant="41" id="aW4-3b-nI5"/>
                                     <constraint firstItem="oOG-0B-hoV" firstAttribute="top" secondItem="Pic-0O-TmJ" secondAttribute="bottom" constant="8" symbolic="YES" id="bBI-zd-Qis"/>
@@ -131,6 +146,7 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="btnClose" destination="Z8F-2e-lMN" id="gSk-kb-7Mq"/>
                         <outlet property="btnMenu" destination="oOG-0B-hoV" id="giP-Hb-UK1"/>
                         <outlet property="inputTextfield" destination="wjR-ep-927" id="Lep-pw-abo"/>
                         <outlet property="lblOutputBtcValue" destination="ahl-8b-cxG" id="meA-JB-ooI"/>
@@ -144,6 +160,7 @@
     <resources>
         <image name="arrow.up.arrow.down.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="multiply.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,8 +13,10 @@ class ConvertViewController : UIViewController{
     @IBOutlet weak var btnMenu: UIButton!
     @IBOutlet weak var inputTextfield: UITextField!
     @IBOutlet weak var lblOutputBtcValue: UILabel!
+    @IBOutlet weak var btnClose: UIButton!
     
     var currencyType : CurrencyType = .USD
+    var isFromHome : Bool! = false
     
     //Implememnt for pop up button
     private lazy var USD = UIAction(title: "🇺🇸 USD",attributes: [], state: .off) { action in
@@ -38,7 +40,7 @@ class ConvertViewController : UIViewController{
     
     
     override func viewDidLoad() {
-        
+        self.btnClose.isHidden = !isFromHome
         self.btnMenu.menu = menu
         self.btnMenu.showsMenuAsPrimaryAction = true
         self.view.hideKeyboardWhenTappedAround()
@@ -63,4 +65,7 @@ class ConvertViewController : UIViewController{
         
     }
     
+    @IBAction func clickClose(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }

@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 class HomePresenter : HomePresenterProtocol {
-    
-    
-    var view: HomeViewProtocol?
+    weak var view: HomeViewProtocol?
     var router: HomeRouterProtocol?
     var interactor: HomeInteractorInputProtocol?
     
     func getCurrentPriceList() {
         interactor?.callCurrentPriceListApi()
     }
-    
+    func presentToCovertView() {
+        router?.presentToCovertView(view)
+    }
     
 }
 extension HomePresenter:  HomeInteractorOutputProtocol{

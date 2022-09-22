@@ -10,8 +10,9 @@ import UIKit
 
 class ConvertViewRouter {
     
-    static func createModule() -> UIViewController? {
+    static func createModule( isFromHome : Bool?) -> UIViewController? {
         guard let view = UIViewController.ConvertViewController as? ConvertViewController else { return nil }
+        view.isFromHome = isFromHome
         return view
     }
     

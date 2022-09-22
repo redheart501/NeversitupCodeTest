@@ -18,6 +18,7 @@ protocol HomePresenterProtocol: AnyObject {
     var interactor: HomeInteractorInputProtocol? { get set }
     var router: HomeRouterProtocol? { get set }
     func getCurrentPriceList()
+    func presentToCovertView()
  
 }
 
@@ -49,4 +50,5 @@ protocol HomeLocalStorageProtocol{
 
 protocol HomeRouterProtocol: AnyObject {
     static func createModule() -> UIViewController?
+    func presentToCovertView(_ view : HomeViewProtocol?)
 }

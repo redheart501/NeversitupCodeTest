@@ -17,16 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IZN-mO-hcS">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21y-cg-Emx">
+                                <rect key="frame" x="339" y="60" width="55" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X5J-jP-69D"/>
+                                    <constraint firstAttribute="width" constant="55" id="jtK-ko-p98"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.arrow.right" catalog="system"/>
+                                <connections>
+                                    <action selector="clickConvertBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfE-cT-Rbn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="21y-cg-Emx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="UX0-Bq-PHo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IZN-mO-hcS" secondAttribute="trailing" id="Yby-g6-N3f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IZN-mO-hcS" secondAttribute="bottom" id="d0a-Lp-Q2g"/>
-                            <constraint firstItem="IZN-mO-hcS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eOx-tM-hmg"/>
+                            <constraint firstItem="IZN-mO-hcS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="eOx-tM-hmg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="21y-cg-Emx" secondAttribute="trailing" constant="20" id="g4M-Pc-Egv"/>
                             <constraint firstItem="IZN-mO-hcS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p2T-Kd-yze"/>
                         </constraints>
                     </view>
@@ -43,6 +57,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left.arrow.right" catalog="system" width="119" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -59,7 +59,10 @@ class HomeViewController: UIViewController {
         presenter?.getCurrentPriceList()
     }
     
-
+    @IBAction func clickConvertBtn(_ sender: Any) {
+        presenter?.presentToCovertView()
+    }
+    
 }
 
 extension HomeViewController : UITableViewDataSource,UITableViewDelegate {

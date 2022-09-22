@@ -29,5 +29,11 @@ class HomeRouter : HomeRouterProtocol {
         return view
     }
     
-    
+    func presentToCovertView(_ view: HomeViewProtocol?) {
+        guard let view = view as? UIViewController else { return }
+        if let vc = ConvertViewRouter.createModule(isFromHome: true){
+            view.present(vc, animated: true)
+        }
+       
+    }
 }
