@@ -64,11 +64,3 @@ class ConvertViewController : UIViewController{
     }
     
 }
-class ConvertViewRouter {
-    static func createModule() -> UIViewController? {
-        guard let view = UIViewController.ConvertViewController as? ConvertViewController else { return nil }
-        return view
-    }
-    
-    
-}

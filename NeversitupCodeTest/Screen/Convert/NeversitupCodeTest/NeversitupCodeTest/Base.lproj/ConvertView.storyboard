@@ -55,7 +55,7 @@
                                             <constraint firstAttribute="height" constant="44" id="1X4-k5-oSb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
                                             <action selector="textEditingChanged:" destination="eIN-uZ-glV" eventType="editingChanged" id="wij-hR-OUG"/>
                                         </connections>

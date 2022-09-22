@@ -37,6 +37,7 @@
 		67874DCD28D8B32F00726F22 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 67874DCC28D8B32F00726F22 /* Alamofire */; };
 		67874DD028D8B35700726F22 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 67874DCF28D8B35700726F22 /* ObjectMapper */; };
 		67874DD228D8B88700726F22 /* CurrencyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67874DD128D8B88700726F22 /* CurrencyListModel.swift */; };
+		67CE069D28DC2387000BAFFA /* ConvertViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE069C28DC2387000BAFFA /* ConvertViewRouter.swift */; };
 		67F80C7528D9716500C944AF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C7428D9716500C944AF /* Utility.swift */; };
 		67F80C7728D9829500C944AF /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F80C7628D9829500C944AF /* LocalStorageManager.swift */; };
 		67F80C7A28D9858700C944AF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 67F80C7928D9858700C944AF /* Realm */; };
@@ -103,6 +104,7 @@
 		67874DC728D8A5D700726F22 /* HomeListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableCell.swift; sourceTree = "<group>"; };
 		67874DC928D8A5E800726F22 /* homeListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeListTableCell.xib; sourceTree = "<group>"; };
 		67874DD128D8B88700726F22 /* CurrencyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListModel.swift; sourceTree = "<group>"; };
+		67CE069C28DC2387000BAFFA /* ConvertViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewRouter.swift; sourceTree = "<group>"; };
 		67F80C7428D9716500C944AF /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		67F80C7628D9829500C944AF /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		67F80C7D28D989CD00C944AF /* HistoryTablecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTablecell.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				67874DA228D884B100726F22 /* ConvertView.storyboard */,
 				67874DC028D88F1F00726F22 /* ConvertViewController.swift */,
+				67CE069C28DC2387000BAFFA /* ConvertViewRouter.swift */,
 			);
 			path = Convert;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				67F80C7528D9716500C944AF /* Utility.swift in Sources */,
 				67874DD228D8B88700726F22 /* CurrencyListModel.swift in Sources */,
 				67F80C9528DAD5EF00C944AF /* Constant.swift in Sources */,
+				67CE069D28DC2387000BAFFA /* ConvertViewRouter.swift in Sources */,
 				67874DBF28D88EFF00726F22 /* HomeLocalStorage.swift in Sources */,
 				67874DBB28D88EB100726F22 /* HomeInteractor.swift in Sources */,
 				67F80C8F28DA0A6B00C944AF /* UIView+Extensions.swift in Sources */,

@@ -27,6 +27,7 @@ class currencyListModel: Mappable {
         updatedISO <- map["time.updatedISO"]
     }
 }
+
 class currencyModel : Mappable{
     var code: String?
     var symbol: String?
